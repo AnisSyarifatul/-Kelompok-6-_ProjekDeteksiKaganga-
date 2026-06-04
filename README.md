@@ -1,6 +1,6 @@
 # Kelompok 6:
 1. Anis Syarifatul Mursyidah (G1A023036)
-2. M. Aimar Apda Hadis (G1A023048(
+2. M. Aimar Apda Hadis (G1A023048)
 3. Arrafi Andersont (G1A023090)
 
 # Proyek Deteksi Kaganga:
