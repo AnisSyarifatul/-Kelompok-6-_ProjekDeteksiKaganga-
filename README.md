@@ -18,12 +18,13 @@ Dataset:
 https://universe.roboflow.com/novalrizkiansyah-ymail-com/aksara-ulu-rejang
 
 # Training Model
-roses training model dilakukan menggunakan Google Colab dengan memanfaatkan akselerasi GPU agar proses pelatihan berjalan lebih cepat dan efisien.
+Proses training model dilakukan menggunakan Google Colab dengan memanfaatkan akselerasi GPU agar proses pelatihan berjalan lebih cepat dan efisien.
 
 Model yang digunakan adalah YOLOv11 dari library Ultralytics. Training dilakukan selama 100 epoch menggunakan dataset yang terhubung melalui file data.yaml.
 
 Konfigurasi training yang digunakan:
 
+```
 from ultralytics import YOLO
 
 model = YOLO('yolov11n.pt')
@@ -32,13 +33,14 @@ model.train(
     data='data.yaml',
     epochs=100,
     imgsz=640
-)"
+)
+```
 
 Penjelasan konfigurasi:
 
-data.yaml digunakan untuk menghubungkan dataset training
-epochs=100 digunakan agar model belajar lebih optimal
-imgsz=640 digunakan sebagai ukuran input gambar pada proses training
+`data.yaml` digunakan untuk menghubungkan dataset training
+`epochs=100` digunakan agar model belajar lebih optimal
+`imgsz=640` digunakan sebagai ukuran input gambar pada proses training
 
 Hasil training menghasilkan file model best.pt yang kemudian digunakan pada proses deteksi aksara Kaganga.
 
