@@ -1,4 +1,9 @@
-# -Kelompok-6-_ProyekDeteksiKaganga-
+# Kelompok 6:
+1. Anis Syarifatul Mursyidah (G1A023036)
+2. M. Aimar Apda Hadis (G1A023048(
+3. Arrafi Andersont (G1A023090)
+
+# Proyek Deteksi Kaganga:
 Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggunakan model YOLOv11 dari library Ultralytics YOLO. Model dilatih menggunakan dataset dari Roboflow melalui Google Colab, kemudian hasil model digunakan untuk melakukan deteksi pada gambar secara lokal menggunakan Python.
 
 # Fitur:
