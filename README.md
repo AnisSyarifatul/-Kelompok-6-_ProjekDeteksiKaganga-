@@ -1,4 +1,4 @@
-# -Kelompok-6-_ProjekDeteksiKaganga-
+# -Kelompok-6-_ProyekDeteksiKaganga-
 Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggunakan model YOLOv11 dari library Ultralytics YOLO. Model dilatih menggunakan dataset dari Roboflow melalui Google Colab, kemudian hasil model digunakan untuk melakukan deteksi pada gambar secara lokal menggunakan Python.
 
 # Fitur:
@@ -15,7 +15,7 @@ Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggun
 
 # Cara Menjalankan Program:
   1. install library yang dibutuhkan `pip install ultralytics opencv-python`
-  2. Masukkan gambar yang ingin diuji ke dalam folder projek
+  2. Masukkan gambar yang ingin diuji ke dalam folder proyek
   3. Jalankan program dengan menekan ikon run code atau dengan `Python main.py`
   4. Hasil deteksi akan muncul dalam jendela OpenCV
 
