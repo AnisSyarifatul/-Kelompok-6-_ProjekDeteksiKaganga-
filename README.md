@@ -1,12 +1,12 @@
-# Kelompok 6:
+# Kelompok 6
 1. Anis Syarifatul Mursyidah (G1A023036)
 2. M. Aimar Apda Hadis (G1A023048)
 3. Arrafi Andersont (G1A023090)
 
-# Proyek Deteksi Kaganga:
+# Proyek Deteksi Kaganga
 Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggunakan model YOLOv11 dari library Ultralytics YOLO. Model dilatih menggunakan dataset dari Roboflow melalui Google Colab, kemudian hasil model digunakan untuk melakukan deteksi pada gambar secara lokal menggunakan Python.
 
-# Dataset:
+# Dataset
 Dataset yang digunakan pada proyek ini diperoleh dari platform Roboflow dan berisi citra aksara Kaganga yang telah melalui proses anotasi untuk kebutuhan object detection.
 
 Dataset dibagi menjadi tiga bagian utama agar model dapat dilatih dan diuji dengan baik:
@@ -17,7 +17,7 @@ Dataset dibagi menjadi tiga bagian utama agar model dapat dilatih dan diuji deng
 Dataset:
 https://universe.roboflow.com/novalrizkiansyah-ymail-com/aksara-ulu-rejang
 
-# Training Model: 
+# Training Model
 Proses training model dilakukan menggunakan Google Colab dengan memanfaatkan akselerasi GPU agar proses pelatihan berjalan lebih cepat dan efisien.
 
 Model yang digunakan adalah YOLOv11 dari library Ultralytics. Training dilakukan selama 100 epoch menggunakan dataset yang terhubung melalui file data.yaml.
@@ -44,26 +44,26 @@ Penjelasan konfigurasi:
 
 Hasil training menghasilkan file model best.pt yang kemudian digunakan pada proses deteksi aksara Kaganga.
 
-# Fitur:
+# Fitur
 - Deteksi aksara Kaganga pada gambar
 - Menggunakan model hasil training di Google Collab (best.pt)
 - Menampilkan hasil deteksi secara langsung
 - Menggunakan YOLOv11 untuk proses object detection
 
-# Struktur Folder:
+# Struktur Folder
 - ├── best.pt ---> Model hasil training
 - ├── gambar_test.jpg ---> Gambar untuk diuji
 - ├── main.py ---> Program utama
 - └── README.md
 
-# Cara Menjalankan Program:
+# Cara Menjalankan Program
   1. Pastikan Python sudah terpasang pada komputer
   2. Install library yang dibutuhkan `pip install ultralytics opencv-python`
   3. Masukkan gambar yang ingin diuji ke dalam folder proyek
   4. Jalankan program dengan menekan ikon run code atau dengan `Python main.py`
   5. Hasil deteksi akan muncul dalam jendela OpenCV
 
-# Penjelasakan Kode:
+# Penjelasakan Kode
 - `from ultralytics import YOLO` (Digunakan untuk memanggil model YOLOv11)
 - `import cv2` (Digunakan untuk menampilkan gambar hasil deteksi)
 - `model = YOLO('best.pt')` (Digunakan untuk memuat model hasil training yang telah dibuat sebelumnya di Google Colab)
