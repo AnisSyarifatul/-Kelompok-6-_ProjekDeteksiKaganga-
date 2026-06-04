@@ -8,7 +8,7 @@ Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggun
 
 # Fitur:
 - Deteksi aksara Kaganga pada gambar
-- Menggunakan model hasil training sendiri (best.pt)
+- Menggunakan model hasil training di Google Collab (best.pt)
 - Menampilkan hasil deteksi secara langsung
 - Menggunakan YOLOv11 untuk proses object detection
 
