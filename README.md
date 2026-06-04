@@ -6,6 +6,42 @@
 # Proyek Deteksi Kaganga:
 Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggunakan model YOLOv11 dari library Ultralytics YOLO. Model dilatih menggunakan dataset dari Roboflow melalui Google Colab, kemudian hasil model digunakan untuk melakukan deteksi pada gambar secara lokal menggunakan Python.
 
+# Dataset
+Dataset yang digunakan pada proyek ini diperoleh dari platform Roboflow dan berisi citra aksara Kaganga yang telah melalui proses anotasi untuk kebutuhan object detection.
+
+Dataset dibagi menjadi tiga bagian utama agar model dapat dilatih dan diuji dengan baik:
+- Train Data (1437 Images): Digunakan untuk melatih model dalam mengenali pola dan bentuk aksara Kaganga.
+- Validation Data (167 Images): Digunakan untuk mengevaluasi performa model selama proses training berlangsung.
+- Test Data (65 Images): Digunakan untuk menguji kemampuan akhir model terhadap data yang belum pernah dilihat sebelumnya.
+
+Dataset:
+https://universe.roboflow.com/novalrizkiansyah-ymail-com/aksara-ulu-rejang
+
+# Training Model
+roses training model dilakukan menggunakan Google Colab dengan memanfaatkan akselerasi GPU agar proses pelatihan berjalan lebih cepat dan efisien.
+
+Model yang digunakan adalah YOLOv11 dari library Ultralytics. Training dilakukan selama 100 epoch menggunakan dataset yang terhubung melalui file data.yaml.
+
+Konfigurasi training yang digunakan:
+
+from ultralytics import YOLO
+
+model = YOLO('yolov11n.pt')
+
+model.train(
+    data='data.yaml',
+    epochs=100,
+    imgsz=640
+)"
+
+Penjelasan konfigurasi:
+
+data.yaml digunakan untuk menghubungkan dataset training
+epochs=100 digunakan agar model belajar lebih optimal
+imgsz=640 digunakan sebagai ukuran input gambar pada proses training
+
+Hasil training menghasilkan file model best.pt yang kemudian digunakan pada proses deteksi aksara Kaganga.
+
 # Fitur:
 - Deteksi aksara Kaganga pada gambar
 - Menggunakan model hasil training di Google Collab (best.pt)
