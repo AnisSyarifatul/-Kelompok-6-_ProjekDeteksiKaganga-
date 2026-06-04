@@ -46,7 +46,7 @@ Hasil training menghasilkan file model best.pt yang kemudian digunakan pada pros
 
 # Fitur
 - Deteksi aksara Kaganga pada gambar
-- Menggunakan model hasil training di Google Collab (best.pt)
+- Menggunakan model hasil training di Google Colab (best.pt)
 - Menampilkan hasil deteksi secara langsung
 - Menggunakan YOLOv11 untuk proses object detection
 
