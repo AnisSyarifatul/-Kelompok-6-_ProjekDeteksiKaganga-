@@ -14,10 +14,10 @@ Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggun
 - └── README.md
 
 # Cara Menjalankan Program:
-  1. install library yang dibutuhkan: pip install ultralytics opencv-python
+  1. install library yang dibutuhkan `pip install ultralytics opencv-python`
   2. Masukkan gambar yang ingin diuji ke dalam folder projek
-  3. Jalankan program dengan menekan ikon run code atau dengan: Python main.py
-  4. Hasil deteksi akan muncul dalam jendela OpenCV.
+  3. Jalankan program dengan menekan ikon run code atau dengan `Python main.py`
+  4. Hasil deteksi akan muncul dalam jendela OpenCV
 
 # Penjelasakan Kode:
 - `from ultralytics import YOLO` (Digunakan untuk memanggil model YOLOv11_
