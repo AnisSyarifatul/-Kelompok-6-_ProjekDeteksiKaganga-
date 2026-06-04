@@ -38,9 +38,9 @@ model.train(
 
 Penjelasan konfigurasi:
 
-`data.yaml` digunakan untuk menghubungkan dataset training
-`epochs=100` digunakan agar model belajar lebih optimal
-`imgsz=640` digunakan sebagai ukuran input gambar pada proses training
+- `data.yaml` digunakan untuk menghubungkan dataset training.
+- `epochs=100` digunakan agar model belajar lebih optimal.
+- `imgsz=640` digunakan sebagai ukuran input gambar pada proses training.
 
 Hasil training menghasilkan file model best.pt yang kemudian digunakan pada proses deteksi aksara Kaganga.
 
