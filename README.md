@@ -8,9 +8,9 @@ Proyek ini merupakan sistem deteksi objek untuk mengenali aksara Kaganga menggun
 - Menggunakan YOLOv11 untuk proses object detection
 
 # Struktur Folder:
-- ├── best.pt              # Model hasil training
-- ├── gambar_test.jpg      # Gambar untuk diuji
-- ├── main.py              # Program utama
+- ├── best.pt ---> Model hasil training
+- ├── gambar_test.jpg ---> Gambar untuk diuji
+- ├── main.py ---> Program utama
 - └── README.md
 
 # Cara Menjalankan Program:
