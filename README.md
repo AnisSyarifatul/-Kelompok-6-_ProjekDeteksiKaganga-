@@ -20,7 +20,7 @@ Cara Menjalankan Program:
 3. Jalankan program dengan menekan ikon run code atau dengan: Python main.py
 4. Hasil deteksi akan muncul dalam jendela OpenCV.
 
-Penjelasakan Kode
+Penjelasakan Kode:
 from ultralytics import YOLO   ---->   Digunakan untuk memanggil model YOLOv11
 import cv2                     ---->   Digunakan untuk menampilkan gambar hasil deteksi
 model = YOLO('best.pt')        ---->   Digunakan untuk memuat model hasil training yang telah dibuat sebelumnya di Google                                           Colab.
